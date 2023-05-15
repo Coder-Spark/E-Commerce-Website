@@ -1,0 +1,115 @@
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://cdn.jsdelivr.net/npm/font-awesome-animation@1.1.1/css/font-awesome-animation.min.css";
+
+.container_flickity{
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.border{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+ 
+.card{
+    border: 3px solid white;
+    height: 379px;
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 60px 63px -85px #000000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}    
+
+.card0{
+  background: url('https://drive.google.com/uc?export=view&id=1m0nLU0eRVl5-3xqQsS5cO3LvuEHZ32Kk') center center no-repeat;
+  background-size: 100%;
+}
+  .card0:hover{
+    background: url('https://drive.google.com/uc?export=view&id=1m0nLU0eRVl5-3xqQsS5cO3LvuEHZ32Kk') left center no-repeat;
+    background-size: 150%;
+  }
+
+.card1{
+  background: url('https://drive.google.com/uc?export=view&id=1-U-G5pxnvWE6lxQk6jP9quAcLxuWYxxu') center center no-repeat;
+  background-size: 100%;
+}
+  .card1:hover{
+    background: url('https://drive.google.com/uc?export=view&id=1-U-G5pxnvWE6lxQk6jP9quAcLxuWYxxu') left center no-repeat;
+    background-size: 150%;
+}
+
+.card2{
+  background: url('https://drive.google.com/uc?export=view&id=1fxUowHCPkWo_m5Fgnow1-sm0iA4bOotX') center center no-repeat;
+  background-size: 100%;
+}
+  .card2:hover{
+    background: url('https://drive.google.com/uc?export=view&id=1fxUowHCPkWo_m5Fgnow1-sm0iA4bOotX') left center no-repeat;
+    background-size: 150%;
+}
+
+.card3 {
+  background: url('https://drive.google.com/uc?export=view&id=1GqjgdMe98hIczhu0PgyPgEyQGYHt1ckZ') center center no-repeat;
+  background-size: 100%;
+}
+  .card3:hover{
+    background: url('https://drive.google.com/uc?export=view&id=1GqjgdMe98hIczhu0PgyPgEyQGYHt1ckZ') left center no-repeat;
+    background-size: 150%;
+}
+
+.low_overlays {
+  color: white;
+  padding-left: 20px;
+  margin-top: 312px !important;
+  letter-spacing: 0.8px;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'sans-serif', cursive;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.fa {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.cart {
+    position: absolute;
+    font-size: 25px;
+    top: 100px;
+    left: 200px !important;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.icons {
+    position: absolute;
+    font-size: 25px;
+    top: 25px;
+    left: 250px;
+}
+
+.icons1 {
+    position: absolute;
+    font-size: 25px;
+    top: 25px;
+    left: 20px;
+    opacity: 0.85;
+}
+
+.card:hover .low_overlays {
+    margin-top: 325px !important;
+    transition: margin-top 0.7s;
+}

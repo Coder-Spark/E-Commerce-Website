@@ -1,0 +1,435 @@
+
+@import "https://use.fontawesome.com/releases/v5.7.1/css/all.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+  user-select: none;  /* disable selection of text */
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
+.login-container {
+    position: fixed;
+    width: 70%;
+    height: 65vh;
+    margin-top: 8%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 3px 3px 35px 5px rgba(0,0,0,.6);
+}
+
+.login-container-item {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#area2 {
+    color: black;
+    background-color: white;
+}
+
+#area1 {
+    color: white;
+    background-color: rgb(17, 124, 143);
+}
+
+h2 {
+  margin: 60px 40px 0;
+  color: black;
+  text-align: left !important;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: 200;
+  }
+
+h3 {
+  font-size: 33px;
+  margin-top: 30%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  margin-top: 10px !important;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 100;
+}
+  
+
+  /* Sign-Up btn */
+  .signup-btn {
+    position: relative;
+    left: 40%;
+    margin-top: 15px;
+    outline: none;
+    text-decoration: none !important;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    background-color: rgb(17, 124, 143);
+    border: 1px solid white;
+  }
+  
+  .signup-btn-span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  
+  .signup-btn:hover {
+    background-color: white;
+    text-decoration: none;
+    animation: signup-btnrotate 0.7s ease-in-out both;
+  }
+  
+  .signup-btn:hover .signup-btn-span {
+    color: black;
+    text-decoration: none;
+    animation: signup-btnstorm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes signup-btnrotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes signup-btnstorm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+
+
+/* Sneaker Svg */
+  .shoe-svg {
+    background: rgb(17, 124, 143);
+    width: 70%;
+    height: 25vh;
+  }
+  /* Ends */
+
+
+  /* Socials */
+  .social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-right: 55px;
+    margin-top: -38px;
+  }
+
+  .social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 100%;
+    background: #fff;
+  }
+  .social-button::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  .social-button:focus, .social-button:hover {
+    color: #fff;
+  }
+  .social-button:focus::after, .social-button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin-left: calc(-50% - 1px);
+  }
+  .social-button i, .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .social-button i {
+    font-size: 15px;
+  }
+  .social-button--facebook {
+    color: #3b5999;
+  }
+  .social-button--facebook::after {
+    background: #3b5999;
+  }
+  .social-button--twitter {
+    color: #00acee;
+  }
+  .social-button--twitter::after {
+    background: #00acee;
+  }
+  .social-button--instagram {
+    color: #e4405f;
+  }
+  .social-button--instagram::after {
+    background: rgb(250, 41, 131);
+  }
+  /* Socials Ends */
+
+  
+
+  /* Input Area */
+  .input-field {
+    position: relative;
+  }
+  .input-field input {
+    width: 350px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 15px;
+    border: 2px solid rgb(17, 124, 143);
+    background: transparent;
+    color: black;
+    outline: none;
+    margin-left:  -15px !important;
+    margin-top: 38px;
+  }
+  .input-field label {
+    position: absolute;
+    top: 35px;
+    left: 55px;
+    transform: translateY(-50%);
+    color: crimson;
+    background: white;
+    font-size: 17px;
+    font-weight: 600;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+
+  input:focus ~ label,
+  input:valid ~ label {
+    top: 37px;
+    left: 55px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 2px;
+    background: white;
+  }  
+  /* Input Area Ends */
+
+
+
+  .remember-checkbox{
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(17, 124, 143);
+    float: left;
+    left: 12%;
+    margin-top: 4%;
+    margin-left: 20px;
+  }
+
+  .frgt-pass {
+    float: right;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -30px;
+    margin-right: 65px;
+    color: rgb(17, 124, 143);
+  }
+  .frgt-pass:hover {
+    color: crimson;
+    text-decoration: underline;
+  }
+
+  /* Checkbox Starts */
+  .cbx {
+    -webkit-perspective: 20;
+    perspective: 10;
+    position: absolute;
+    float: left;
+    top: 62% !important;
+    left: 56% !important;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 4px;
+    transform: translate3d(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-height: 15px;
+    max-width: 15px;
+    overflow: hidden;
+  }
+  .cbx:hover {
+    border-color: rgb(37, 37, 37);
+  }
+  .flip {
+    display: block;
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 12px;
+    height: 14px;
+  }
+  #cbx {
+    display: none;
+  }
+  #cbx:checked + .cbx {
+    border-color: rgb(17, 124, 143);
+  }
+  #cbx:checked + .cbx .flip {
+    transform: rotateY(180deg);
+  }
+  .front {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0.5px;
+    left: -2.5px;
+    width: 14px;
+    height: 12px;
+    border-radius: 2px;
+  }
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 2.38px;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+  .front {
+    background: rgb(214, 214, 214);
+    z-index: 1;
+  }
+  .back {
+    transform: rotateY(180deg);
+    background: rgb(17, 124, 143);
+    text-align: center;
+    color: #fff;
+    line-height: 5px;
+    box-shadow: 0 0 0 1px rgb(17, 124, 143);
+  }
+  .back svg {
+    margin-top: 3.5px;
+    margin-left: 1px;
+    fill: none;
+  }
+  .back svg path {
+    stroke: #fff;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Checkbox Ends */
+  
+
+
+  /* Sign-In btn */
+  .signIn-btn {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px; 
+       }
+  
+  /* Sign-In Button Styling */
+    .signIn-btn {
+      width: 40%;
+      text-align: center;
+      line-height: 10px;
+      color: white;
+      background-color: #2c9caf;
+      border: none;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      transition: all 1000ms;
+      position: relative;
+      overflow: hidden;
+      outline: 1px solid #2c9caf;
+      }
+  
+  
+  /* Sign-In Hover Styling */
+      .signIn-btn:hover {
+        border: 0.1px solid black;
+        color: black;
+        background-color: white; 
+        transform: scale(1);
+        outline: 0px;
+        box-shadow: 4px 4px 15px -3px #268391;
+      }
+  
+  /* Sign-In Hover Animation */
+      .signIn-btn::before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #f5f5f5;
+        transform: skewX(45deg);
+        z-index: -1;
+        transition: width 1000ms;
+      }
+  
+      .signIn-btn:hover::before {
+        width: 250%;
+      }

@@ -1,0 +1,177 @@
+
+/* To Make And Style Grid */
+
+#container {
+  position: relative;
+  padding-top: 38px !important;
+  padding: 18px;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "img1 img2"
+    "img1 img3";
+    grid-template-columns: 1fr 35%;
+}
+
+#grid > div {
+    border: 0;
+    
+}
+
+#grid > div:first-child {
+    grid-area: img1;
+    height: 600px;
+}
+
+
+.img1 {
+    height: 100%;
+    width: 100%;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+#col1 {
+  min-height: 100% ;
+}
+
+#col2 {
+    max-height: 100%;
+}
+
+#col3 {
+    max-height: 100%;
+}
+
+
+/* For Hover Property on images */
+/* For Image-1 Overlay */
+.overlay1 {
+    position: absolute; 
+    bottom: 2.7%; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.65); /* Black see-through */
+    color: #f1f1f1; 
+    width: 61.93%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 25px;
+    padding: 7px;
+    text-align: left;
+    font-style: oblique;
+  }
+
+#col1:hover .overlay1 {
+    opacity: 1;
+  }
+
+
+/* For Image-2 Overlay */
+.overlay2 {
+    position: absolute; 
+    bottom: 49.7%; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 34%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    text-align: left;
+    font-style: oblique;
+  }
+  
+  #col2:hover .overlay2 {
+    opacity: 1;
+  }
+
+
+/* For Image-3 Overlay */
+.overlay3 {
+    position: absolute; 
+    bottom: 2.7%; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 34%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    text-align: left;
+    font-style: oblique;
+  }
+  
+  #col3:hover .overlay3 {
+    opacity: 1;
+  }
+
+
+  
+  
+  /* Responsivness */
+
+  @media screen and (max-width: 600px) {
+    #container {
+      padding-top: 10px !important;
+      padding: 10px;
+    }
+    #grid {
+      display: block;
+    }
+    #col1 {
+      margin-bottom: 3px;
+    }
+    #col2 {
+      margin-bottom: 3px;
+    }
+    #col3 {
+      margin-bottom: 3px;
+    }
+    #grid > div:first-child {
+      grid-area: img1;
+      height: 50%;
+      margin-top: 10px;
+    }
+    .overlay1 {
+      position: absolute;
+      bottom: 66.3%;
+      background: rgba(0, 0, 0, 0.65); /* Black see-through */ 
+      width: 93.8%;
+      opacity: 1;
+      font-size: 11px;
+      padding-top: 7px;
+      padding-left: 3px;
+    }
+    .overlay2 {
+      position: absolute;
+      bottom: 34.5%;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.65); /* Black see-through */ 
+      width: 93.8%;
+      opacity: 1;
+      font-size: 11px;
+      padding-top: 7px;
+      padding-left: 3px;
+    }
+    .overlay3 {
+      position: absolute;
+      bottom: 2.7%;
+      background: rgba(0, 0, 0, 0.65); /* Black see-through */ 
+      width: 93.8%;
+      opacity: 1;
+      font-size: 11px;
+      padding-top: 7px;
+      padding-left: 3px;
+    }
+  }
